@@ -1,10 +1,10 @@
-# dscollections
+# pydscollections
 
-`dscollections` is a professional, educational, and production-friendly Python package that provides commonly used **Data Structures and Algorithms (DSA)** building blocks.
+`pydscollections` is a professional, educational, and production-friendly Python package that provides commonly used **Data Structures and Algorithms (DSA)** building blocks.
 
 Author: **Sanjay Saravanan M.Tech (IIT Madras)**
 
-## Why dscollections?
+## Why pydscollections?
 
 - Clean and consistent APIs.
 - Strong type hints for better IDE support.
@@ -33,19 +33,13 @@ Author: **Sanjay Saravanan M.Tech (IIT Madras)**
 ## Installation
 
 ```bash
-pip install dscollections
-```
-
-For local development:
-
-```bash
-pip install -e .[dev]
+pip install pydscollections
 ```
 
 ## Quick Start
 
 ```python
-from dscollections import Stack, Queue, BinarySearchTree
+from pydscollections import Stack, Queue, BinarySearchTree
 
 stack = Stack[int]()
 stack.push(10)
@@ -65,27 +59,10 @@ print(12 in bst)          # True
 print(list(bst.in_order()))  # [5, 10, 12, 15]
 ```
 
-## Publishing to PyPI
-
-1. Build distributions:
-   ```bash
-   python -m pip install --upgrade build
-   python -m build
-   ```
-2. Upload to TestPyPI:
-   ```bash
-   python -m pip install --upgrade twine
-   twine upload --repository testpypi dist/*
-   ```
-3. Upload to PyPI:
-   ```bash
-   twine upload dist/*
-   ```
-
 ## Project Layout
 
 ```text
-src/dscollections/
+src/pydscollections/
   __init__.py
   linear.py
   tree.py
