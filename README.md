@@ -46,13 +46,7 @@ Version: **0.2.0**
 ## Installation
 
 ```bash
-pip install dscollections
-```
-
-Development mode:
-
-```bash
-pip install -e .[dev]
+pip install pydscollections
 ```
 
 ## Print-friendly Behavior
@@ -76,23 +70,6 @@ print(queue)  # Queue(front->rear=['a', 'b'])
 print(bst)    # BinarySearchTree(in_order=[5, 10, 15])
 print(m)      # HashMap({'x': 100})
 ```
-
-## Publishing to PyPI
-
-1. Build package:
-   ```bash
-   python -m pip install --upgrade build
-   python -m build
-   ```
-2. Upload to TestPyPI:
-   ```bash
-   python -m pip install --upgrade twine
-   twine upload --repository testpypi dist/*
-   ```
-3. Upload to PyPI:
-   ```bash
-   twine upload dist/*
-   ```
 
 ## License
 
